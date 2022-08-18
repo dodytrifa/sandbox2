@@ -1,44 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
-body{
+body {
   font-family: montserrat;
   background-color: #d3e0ea;
+  height: 100%;
 }
 
-nav{
+nav {
   height: 5em;
   width: 100%;
   background: #1687a7;
 }
 
-label.logo{
+label.logo {
   color: white;
   padding: 0 2em;
-  font-size: 2.5rem;
+  font-size: 36px;
   line-height: 80px;
   font-weight: bold;
 }
 
-nav ul{
+nav ul {
   float: right;
-  margin-right:3em;
+  margin-right: 3em;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
@@ -46,40 +48,41 @@ nav ul li a{
   text-transform: uppercase;
 }
 
-a.active,a:hover{
-  transition: .5s;
+a.active,
+a:hover {
+  transition: 0.5s;
   background: #aee1e1;
 }
 
-.checkbtn{
+.checkbtn {
   float: right;
   display: none;
   color: white;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 80px;
   margin-right: 40px;
 }
 
-#check{
+#check {
   display: none;
 }
 
-@media (max-width: 952px){
-  label.logo{
+@media (max-width: 952px) {
+  label.logo {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 16px;
   }
 }
 
-@media (max-width: 858px){
-  .checkbtn{
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
   }
-  ul{
+  ul {
     top: 80px;
     z-index: 10;
     width: 100%;
@@ -87,22 +90,23 @@ a.active,a:hover{
     height: 100vh;
     position: fixed;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
     background: #1687a7;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 20px;
   }
-  a:hover,a.active{
+  a:hover,
+  a.active {
     background: none;
     color: #0082e6;
   }
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     left: 0;
   }
 }
@@ -128,10 +132,10 @@ main {
   position: relative;
   border-radius: 20px;
   background-color: #8ac4d0;
-  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.app-info{
+.app-info {
   color: #696969;
   display: flex-row;
   line-height: 2.2em;
